@@ -6,12 +6,12 @@
   "main": "componentizer.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mohamed28/Mohamed28.components.git"
+    "url": "git+https://github.com/Mohamed28/mohamed28.componentizer.git"
   },
   "bugs": {
-    "url": "https://github.com/Mohamed28/Mohamed28.components/issues"
+    "url": "https://github.com/Mohamed28/mohamed28.componentizer.git/issues"
   },
-  "homepage": "https://github.com/Mohamed28/Mohamed28.components#readme",
+  "homepage": "https://github.com/Mohamed28/mohamed28.componentizer.git#readme",
   "author": "Lucas Barretto e Silva",
   "license": "ISC"
 }
