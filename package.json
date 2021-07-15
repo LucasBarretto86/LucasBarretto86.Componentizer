@@ -4,6 +4,7 @@
   "description": "\"Lib to build HTML Elements\"",
   "main": "index.js",
   "scripts": {
+    "start": "python3 -m http.server 5505",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

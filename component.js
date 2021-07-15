@@ -8,8 +8,7 @@ export default class Component {
     }
 
     _build(tag, content, options, ...children) {
-        let element = document.createElement(tag, options);
-
+        let element = document.createElement(tag);
         this._content(element, content)
         this._options(element, options)
         this._children(element, ...children)
@@ -24,19 +23,19 @@ export default class Component {
     }
 
     _options(element, options) {
-        if (Object.keys(options).length < 1) return
-        let event = Object.entries(options).filter(option => option[0].match(/on\w*/)).flat()
+        if (options.length < 1) return;
 
-        if (event.length > 0) {
-            element.addEventListener(event[0].slice(2), event[1])
-            delete options[event[0]]
-        }
-
-        Object.keys(options).forEach(key => element.setAttribute(key, options[key]))
+        Object.entries(options).forEach(([key, value]) => {
+            if (key.match(/on\w*/)) {
+                element.addEventListener(key.replace("on", ""), value)
+            } else {
+                element.setAttribute(key, value)
+            }
+        })
     }
 
-    _children(element, ...children) {
-        if (children.length < 1) return
+    _children(element, children) {
+        if (children.length < 1) return;
 
         children.forEach(child => {
             if (Array.isArray(child)) {
@@ -54,5 +53,4 @@ export default class Component {
     get state() {
         return this._state
     }
-
 }
