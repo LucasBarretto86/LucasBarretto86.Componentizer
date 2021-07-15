@@ -1,23 +1,29 @@
 import Component from "./component.js";
 
-class Example extends Component {
+class Teste extends Component {
     constructor(props) {
         super(props)
+
+        this.state = { equality: "It's black" }
+
+        this.shamone = this.shamone.bind(this)
     }
 
     render() {
-        return this.build("h1", "Seja to como eu, seja to como você", { class: "example", id: "example", "onclick": this.exampleMethod },
-            this._build("span", "danado!", { class: "example__span" }),
-            this._build("p", "Pai amado!", { class: "example__paragraph" })
+        return this.build("h1", "It's black", { onmouseover: this.shamone, class: "michael__jackson" },
+            ["span", "!"]
         )
     }
 
-    exampleMethod() {
-        console.log('This is just an example');
+    shamone() {
+        if (this.state.equality === "It's black") {
+            this.state.equality = "it's white"
+        } else {
+            this.state.equality = "It's black"
+        }
+
+        document.querySelector('.michael__jackson').innerText = this.state.equality
     }
 }
 
-let example = new Example({ a: 1, b: 2 })
-console.log(example.render())
-
-document.getElementById("app").appendChild(example)
+document.getElementById("app").append(new Teste({ some: "teste" }).render())

@@ -4,7 +4,7 @@ export default class Component {
     }
 
     build(tag, content = "", options = {}, ...children) {
-        this._build(tag, content, options, ...children)
+        return this._build(tag, content, options, ...children)
     }
 
     _build(tag, content, options, ...children) {
