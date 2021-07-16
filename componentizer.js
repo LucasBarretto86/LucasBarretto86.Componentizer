@@ -1,6 +1,10 @@
-export default class Component {
+export default class Componentizer {
     constructor(props) {
         this.props = props
+    }
+
+    render() {
+        throw "Each component needs to have  it's own implementation"
     }
 
     build(tag, content = "", options = {}, ...children) {

@@ -1,21 +1,17 @@
 {
-  "name": "mohamed28.components",
+  "name": "mohamed28.componentizer",
   "version": "1.0.0",
-  "description": "\"Lib to build HTML Elements\"",
-  "main": "index.js",
-  "scripts": {
-    "start": "python3 -m http.server 5505",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "\"Lib to build HTML Elements and states\"",
+  "type": "module",
+  "main": "componentizer.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mohamed28/Mohamed28.components.git"
+    "url": "git+https://github.com/Mohamed28/mohamed28.componentizer.git"
   },
   "bugs": {
-    "url": "https://github.com/Mohamed28/Mohamed28.components/issues"
+    "url": "https://github.com/Mohamed28/mohamed28.componentizer.git/issues"
   },
-  "homepage": "https://github.com/Mohamed28/Mohamed28.components#readme",
+  "homepage": "https://github.com/Mohamed28/mohamed28.componentizer.git#readme",
   "author": "Lucas Barretto e Silva",
-  "license": "ISC",
-  "type": "module"
+  "license": "ISC"
 }
