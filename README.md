@@ -1,16 +1,18 @@
-# Mohamed28 Componentizer
+# LucasBarretto86 Componentizer
 
 Basically is react like component to create HTML Elements and handle states
 
 ## Install
-```
-npm -i mohamed28.componentizer --save
-```
+
+~~~ bash
+npm -i lucasbarretto86.componentizer --save
+~~~
 
 ## Usage
+
 Basic you create some new class and extend the `Componentizer` class
 
-```
+~~~ js
 import Componentizer from 'componentizer'
 
     default export class Example extends Componentizer {
@@ -22,7 +24,8 @@ import Componentizer from 'componentizer'
             )
         }     
     }
-```
+~~~
 
 ## Implementation
+
 Everytime you extend `Componentizer` you need to implement a specific render() method, that has to be used on the main js that you will use you component

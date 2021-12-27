@@ -1,17 +1,18 @@
 {
-  "name": "mohamed28.componentizer",
+  "name": "lucasbarretto86.componentizer",
   "version": "1.0.0",
   "description": "\"Lib to build HTML Elements and states\"",
   "type": "module",
   "main": "componentizer.js",
+  "source": "componentizer.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mohamed28/mohamed28.componentizer.git"
+    "url": "git+https://github.com/LucasBarretto86/lucasbarretto86.componentizer.git"
   },
   "bugs": {
-    "url": "https://github.com/Mohamed28/mohamed28.componentizer/issues"
+    "url": "https://github.com/LucasBarretto86/lucasbarretto86.componentizer/issues"
   },
-  "homepage": "https://github.com/Mohamed28/mohamed28.componentizer#readme",
+  "homepage": "https://github.com/LucasBarretto86/lucasbarretto86.componentizer#readme",
   "author": "Lucas Barretto e Silva",
   "license": "ISC"
 }
