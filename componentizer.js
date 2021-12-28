@@ -8,14 +8,14 @@ export default class Componentizer {
     }
 
     build(tag, content = "", options = {}, ...children) {
-        return this._build(tag, content, options, ...children)
+        return this._build(tag, content, options, children)
     }
 
-    _build(tag, content, options, ...children) {
+    _build(tag, content, options, children) {
         let element = document.createElement(tag);
         this._content(element, content)
         this._options(element, options)
-        this._children(element, ...children)
+        this._children(element, children)
 
         return element
     }
