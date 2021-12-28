@@ -1,6 +1,8 @@
 export default class Componentizer {
     constructor(props) {
         this.props = props
+
+        return this.render.bind(this).call()
     }
 
     render() {

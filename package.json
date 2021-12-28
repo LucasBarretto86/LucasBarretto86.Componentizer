@@ -1,6 +1,6 @@
 {
   "name": "lucasbarretto86.componentizer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "\"Lib to build HTML Elements and states\"",
   "type": "module",
   "main": "componentizer.js",
