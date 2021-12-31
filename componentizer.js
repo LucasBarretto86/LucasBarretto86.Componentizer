@@ -34,6 +34,8 @@ export default class Componentizer {
         Object.entries(options).forEach(([key, value]) => {
             if (key.match(/on\w*/)) {
                 element.addEventListener(key.replace("on", ""), value)
+            } else if (key.match(/data/) && typeof value == "object") {
+                this._dataset(element, data)
             } else {
                 element.setAttribute(key, value)
             }
@@ -49,6 +51,12 @@ export default class Componentizer {
             } else {
                 element.append(child)
             }
+        })
+    }
+
+    _dataset(element, data) {
+        Object.entries(data).forEach(([key, value]) => {
+            element.dataset[key] = value
         })
     }
 
