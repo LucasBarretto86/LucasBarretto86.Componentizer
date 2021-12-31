@@ -39,9 +39,10 @@ Everytime you extend `Componentizer` you need to implement a specific render() m
 
 ## Changelog
 
-~~~ txt
+~~~ md
 1.0.1 - Update project
 1.0.2 - General adjustments
 1.0.3 - Make main componentizer class call render implementations by default
-1.0.4 - Create condition to add data attributes on elements and make component creation syntax better 
+1.0.4 - Create condition to add data attributes on elements and make component creation syntax better
+1.0.5 - Fix `this._dataset` paramenter reference to add data attributes
 ~~~

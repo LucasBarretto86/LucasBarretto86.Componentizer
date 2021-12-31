@@ -35,7 +35,7 @@ export default class Componentizer {
             if (key.match(/on\w*/)) {
                 element.addEventListener(key.replace("on", ""), value)
             } else if (key.match(/data/) && typeof value == "object") {
-                this._dataset(element, data)
+                this._dataset(element, value)
             } else {
                 element.setAttribute(key, value)
             }
