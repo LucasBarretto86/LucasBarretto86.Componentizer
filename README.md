@@ -4,8 +4,16 @@ Basically is react like component to create HTML Elements and handle states
 
 ## Install
 
+### npm
+
 ~~~ bash
-npm -i lucasbarretto86.componentizer --save                this._dataset(element, data)
+npm -i lucasbarretto86.componentizer --save
+~~~
+
+### yarn
+
+~~~ bash
+yarn add -D lucasbarretto86.componentizer
 ~~~
 
 ## Usage
