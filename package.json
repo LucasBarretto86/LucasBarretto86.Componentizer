@@ -14,8 +14,5 @@
   },
   "homepage": "https://github.com/LucasBarretto86/lucasbarretto86.componentizer#readme",
   "author": "Lucas Barretto e Silva",
-  "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "license": "ISC"
 }
